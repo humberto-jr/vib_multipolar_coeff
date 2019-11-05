@@ -13,16 +13,18 @@ ABOUT
 This program computes the vibrational multipolar coefficients as function of the
 scattering coordinate, R, for an atom-diatom problem, defined as
 
-V(v', v, lambda, R) := [(2*lambda + 1)/2]*
-integral[V(v', v, R, theta)*P(lambda, cos(theta))*sin(theta)*dtheta] from 0 to pi
+V(v', v, lambda, R) :=
+g*integral[V(v', v, R, theta)*P(lambda, cos(theta))*sin(theta)*dtheta] from 0 to pi
 
 where,
 
+g = [(2*lambda + 1)/2]
+
 V(v', v, R, theta) := <v'|V(r, R, theta)|v>
 
-{|v>} = set of vibrational wavefunctions of the diatomic target
+{|v>} = set of vibrational wavefunctions with quantum number v from the diatomic target
 
-V(r, R, theta) = potential energy surface of the system
+V(r, R, theta) = potential energy surface of the system in Jacobi coordinates, (r, R, theta)
 
 P(lambda, x) = Lengendre polynomial of order lambda evaluated at x
 
@@ -49,14 +51,12 @@ on/off the use of OpenMP; 'v_dir' is the folder in which the wavefuctions are
 stored; and, 'is_homo' tells the program to consider a (hetero) homonuclear
 diatomic target.
 
-5) Invoke the program, e.g.
-
-./main.out < my_input_file.d
+5) Invoke the program, e.g. ./main.out < my_input_file.d
 
 6) Each multipolar coefficient, as function of R, will be printed in independent
 files named v=0-0_lambda=0.dat, v=0-1_lambda=0.dat, etc. In which units are
-driven by the wavefunctions and the pes (see above).
+driven by the wavefunctions and the PES (see above).
 
 7) One is required to write his own post-processing script to read the output
-data files and rewrite in the format used by ASPIN, Molscat or any other 
+data files and rewrite in the format used by ASPIN, Molscat or any other
 scattering code.
