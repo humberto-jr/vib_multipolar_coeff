@@ -7,7 +7,7 @@ Based on the original routine vlambda.f90 from Fabio Carelli (2015-2016).
 
 
 
-About
+ABOUT
 =====
 
 This program computes the vibrational multipolar coefficients as function of the
@@ -41,34 +41,13 @@ defined by the user in pes.f90. On entry, units for (r, R) are the same of those
 used in the wavefunctions. Theta is in rad. On exit, the energy unit chosen is
 also the unit for all results.
 
-3) Invoke either build_gfortran.sh or build_ifort.sh to compile the program,
-e.g.
+3) Invoke either build_gfortran.sh or build_ifort.sh to compile the program, e.g.
+./build_gfortran.sh (for GNU gfortran).
 
-./build_gfortran.sh
-
-4) Write an input file, e.g.
-
-&grid
-    R_min   = 0.5
-    R_max   = 10.0
-    R_step  = 0.25
-    use_omp = .true.
-&end
-
-&vib_wavefunction
-    v_min = 0
-    v_max = 1
-	v_dir = "/home/my_name/my_calculations/my_wavefunctions"
-&end
-
-&rotor
-    lambda_max = 4
-    is_homo = .false.
-&end
-
-Where, 'use_omp' switch on/off the use of OpenMP; 'v_dir' is the folder in which
-the wavefuctions are stored; and, 'is_homo' tells the program to consider a
-(hetero) homonuclear diatomic target.
+4) Write an input file, e.g. example/He+H2+_example.d; where, 'use_omp' switchs
+on/off the use of OpenMP; 'v_dir' is the folder in which the wavefuctions are
+stored; and, 'is_homo' tells the program to consider a (hetero) homonuclear
+diatomic target.
 
 5) Invoke the program, e.g.
 
@@ -79,4 +58,5 @@ files named v=0-0_lambda=0.dat, v=0-1_lambda=0.dat, etc. In which units are
 driven by the wavefunctions and the pes (see above).
 
 7) One is required to write his own post-processing script to read the output
-data files and rewrite in the format used by ASPIN or any other scattering code.
+data files and rewrite in the format used by ASPIN, Molscat or any other 
+scattering code.
