@@ -13,20 +13,20 @@ ABOUT
 This program computes the vibrational multipolar coefficients as function of the
 scattering coordinate, R, for an atom-diatom problem, defined as
 
-V(v', v, lambda, R) :=
+V(v', v, lambda, R) =
 g*integral[V(v', v, R, theta)*P(lambda, cos(theta))*sin(theta)*dtheta] from 0 to pi
 
 where,
 
-g = [(2*lambda + 1)/2]
+g := (2*lambda + 1)/2
 
 V(v', v, R, theta) := <v'|V(r, R, theta)|v>
 
-{|v>} = set of vibrational wavefunctions with quantum number v from the diatomic target
+{|v>} := set of vibrational wavefunctions with quantum number v from the diatomic target
 
-V(r, R, theta) = potential energy surface of the system in Jacobi coordinates, (r, R, theta)
+V(r, R, theta) := potential energy surface of the system in Jacobi coordinates, (r, R, theta)
 
-P(lambda, x) = Lengendre polynomial of order lambda evaluated at x
+P(lambda, x) := Lengendre polynomial of order lambda evaluated at x
 
 
 
