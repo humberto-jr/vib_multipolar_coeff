@@ -2,8 +2,8 @@ real(kind = 8) function pes(sml_r, big_r, theta)
     implicit none
 
 !   NOTE: on entry, sml_r and big_r have the same units used in the
-!	wavefunctions, and theta has units of rad. Units of energy used
-!	herein are also, by default, the units for all results.
+!   wavefunctions, and theta has units of rad. Units of energy used
+!   herein are also, by default, the units for all results.
 
     real(kind = 8), intent(in) :: sml_r, big_r, theta
 
@@ -62,7 +62,7 @@ real(kind = 8) function pes(sml_r, big_r, theta)
 !   thus the PES value is returned in wavenumber.
 !
 
-    pes = (pes - inf)*219474.63137054d0 ! Atomic units to wavenumber
+    pes = (pes - inf)*219474.63137054d0 ! atomic units to wavenumber
     return
 
     contains
@@ -78,7 +78,8 @@ end function pes
 
 !
 !     Original PES
-!     Chemical Physics Letters 469 (2009) 26-30; doi: 10.1016/j.cplett.2008.12.035
+!     Chemical Physics Letters 469 (2009) 26-30
+!     doi: 10.1016/j.cplett.2008.12.035
 !
 
       subroutine fit3d(r12,r13,r23,e,der)
