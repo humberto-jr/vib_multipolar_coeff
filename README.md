@@ -14,7 +14,7 @@ About
 This program computes the vibrational multipolar coefficients as function of the
 scattering coordinate, R, for an atom-diatom problem, defined as
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![](https://https://github.com/violador/vib_multipolar_coeff/blob/master/doc/definition.jpg "definition")
 
 where,
 
