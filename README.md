@@ -3,7 +3,7 @@ Author
 
 Written by Humberto Jr (humberto.dasilvajr@unlv.edu).
 
-Based on the original routine vlambda.f90 from Fabio Carelli (2015-2016).
+Based on the original routine `vlambda.f90` from Fabio Carelli (2015-2016).
 
 Oct, 2019
 
