@@ -39,7 +39,7 @@ defined by the user in `pes.f90`. On entry, units for (r, R) are the same of tho
 used in the wavefunctions. Theta is in rad. On exit, the energy unit chosen is
 also the unit for all results.
 
-3. Invoke either `build_gfortran.sh` or `build_ifort.sh` to compile the program, e.g.
+3. Invoke either `scripts/build_gfortran.sh` or `scripts/build_ifort.sh` to compile the program, e.g.
 `./build_gfortran.sh` (for GNU gfortran).
 
 4. Write an input file, e.g. `example/He+H2+_example.d`; where, `use_omp` switchs
