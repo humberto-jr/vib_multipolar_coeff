@@ -62,7 +62,7 @@ scattering code.
 Example
 -------
 
-![](https://github.com/violador/vib_multipolar_coeff/blob/master/doc/ejpd2017_fig6.jpg "see doc/iskandarov2017.pdf")
+![](https://github.com/violador/vib_multipolar_coeff/blob/master/doc/iskandarov2017_fig6.jpg "see doc/iskandarov2017.pdf")
 
 See Fig. (6) of Ref. [1] for details.
 
