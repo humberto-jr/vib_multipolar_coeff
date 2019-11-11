@@ -8,6 +8,7 @@ Based on the original routine `vlambda.f90` from Fabio Carelli (2015-2016).
 Oct, 2019
 
 
+
 About
 -----
 
@@ -55,3 +56,20 @@ driven by the wavefunctions and the PES (see above).
 7. One is required to write his own post-processing script to read the output
 data files and rewrite in the format used by ASPIN, Molscat or any other
 scattering code.
+
+
+
+Example
+-------
+
+![](https://github.com/violador/vib_multipolar_coeff/blob/master/doc/ejpd2017_fig6.jpg "see doc/iskandarov2017.pdf")
+
+See Fig. (6) of Ref. [1] for details.
+
+
+
+References
+----------
+
+[1] I. Iskandarov et al. Eur. Phys. J. D 71:141 (2017)
+    doi: https://doi.org/10.1140/epjd/e2017-80043-8
