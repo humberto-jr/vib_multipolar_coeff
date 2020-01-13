@@ -1,4 +1,5 @@
 subroutine print_output(a, b, lambda_max, is_homo, big_r)
+    implicit none
 
     logical, intent(in) :: is_homo
     real(kind = 8), intent(in) :: big_r
